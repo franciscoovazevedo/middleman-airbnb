@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+   <% data.users.map do |key,value| %>
+    <div class="col-xs-12 col-sm-3">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= value["photo_url"] %>);">
+         <div class="card-category"><%= key %></div>
+         <div class="card-description">
+           <p><%= value["github_nickname"] %></p>
+         </div>
+         <img class="card-user" src="../images/logo.png">
+         <a class="card-link" href="#" ></a>
+       </div>
+     </div>
+    <% end %>
+   </div>
+ </div>
+</div>
